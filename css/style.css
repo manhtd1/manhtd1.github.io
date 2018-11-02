@@ -1,0 +1,22 @@
+img{ border: 3px double red;}
+a {
+    text-decoration: underline;
+    cursor: help;
+
+}
+a:link {
+    color: rebeccapurple
+}
+a:visited{
+    color: red 
+}
+a:hover{
+    color: yellow
+}
+a:active{
+    color: rgb(3, 39, 3)
+}
+
+img:hover{
+    border-radius: 50%
+}

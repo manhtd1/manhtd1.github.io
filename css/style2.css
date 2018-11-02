@@ -1,0 +1,14 @@
+.t1::after{
+    color: #ff0000;
+    content:" VND";
+    
+}
+.t1::before{
+    content: "học phí ";
+    color: #0099ff;
+    font-variant: small-caps;
+}
+
+p::before{
+    content:url("")
+}
