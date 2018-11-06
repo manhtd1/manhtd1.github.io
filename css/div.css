@@ -13,9 +13,17 @@ img{
     float: left;
     padding: 10px;
 }
-#main-menu{
+#main-menu a{
+    display: block;
     text-align: center;
-    word-spacing: 80px;
+    font-size: 30px;
+   color: red;
+    background-color: white;
+     height: 70px;
+   text-decoration: none;
+}
+a{
+    max-width: 100%;
 }
 #poor{
     max-width: 900px;
