@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 #banner{
-    width: 1000px;
+    width: 100%;
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
 }
 .hinhanh div {
     width: 33.3333%;
