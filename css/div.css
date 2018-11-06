@@ -7,24 +7,48 @@
 
 img{
     width: 100%;
+    
 }
 .hinhanh div {
     width: 33.3333%;
     float: left;
     padding: 10px;
+    
+}
+#main-menu {
+    position: relative;
+    background-color: wheat;
+    margin: 0;
 }
 #main-menu a{
     display: block;
     text-align: center;
     font-size: 30px;
-   color: red;
-    background-color: white;
-     height: 70px;
+   color: #000000;
+     height: 60px;
    text-decoration: none;
 }
 a{
     max-width: 100%;
 }
+#main-menu>a:first-child>img{
+    max-width: 230px;
+    border-radius: 50%;
+   
+    border: 4px solid whitesmoke;
+    
+}
+#main-menu>a:first-child{
+    position: absolute;
+    padding: 4px;
+    top: -170px;
+  
+
+
+}
+
+
+
 #poor{
     max-width: 900px;
     margin: auto;
