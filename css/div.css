@@ -1,0 +1,23 @@
+*{ 
+    box-sizing: border-box;
+}
+#banner{
+    width: 1000px;
+}
+
+img{
+    max-width: 100%;
+}
+.hinhanh div {
+    width: 33.3333%;
+    float: left;
+    padding: 10px;
+}
+#main-menu{
+    text-align: center;
+    word-spacing: 80px;
+}
+#poor{
+    max-width: 900px;
+    margin: auto;
+}
