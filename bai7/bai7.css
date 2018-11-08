@@ -1,0 +1,50 @@
+/*==style cơ bản==*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Arial", Helvetica, sans-serif;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.250;
+    margin: 0;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: #838bba;
+    transition: all 0.5s;
+    padding-bottom: 10px;
+}
+a:hover, a:visited{
+    color: #ffaaff;
+}
+/*==menu==*/
+#content, #menu {
+    padding: 1em 8em;
+    text-align: center;
+}
+h2{
+    color: #2c570fd5;
+}
+#menu p{
+    font-size: 0.9em;
+}
+.slogan{
+    background-color: #cfc6c6;
+    padding: 1.5em 20%;
+    border: 1px solid #e8e8e8;
+}
+/*==content==*/
+#ds {
+    overflow: hidden;
+    margin-right: 1.5em auto;
+}
+.sung img{
+    text-align: justify;
+    float: left;
+    margin-left: 5px;
+}
+.lub img{
+    
+}
