@@ -40,11 +40,46 @@ h2{
     overflow: hidden;
     margin-right: 1.5em auto;
 }
-.sung img{
+.sung {
     text-align: justify;
     float: left;
     margin-left: 5px;
+    clear: both;
 }
-.lub img{
+.sung div{
+    width: 30%;
+    float: left;
+}
+.sung img{
+    width: 250px;
+    height: 250px;
+}
+.lua aside{
+    width: 70%;
+    float: left;
+    font-size: 1.3em;
+}
+.lub aside{
+    width: 70%;
+    float: left;
+    font-size: 1.3em;
+}
+.luc aside{
+    width: 70%;
+    float: left;
+    font-size: 1.3em;
+}
+.lud aside{
+    width: 70%;
+    float: left;
+    font-size: 1.3em;
+}
+.lue aside{
+    width: 70%;
+    float: left;
+    font-size: 1.3em;
+}
+footer{
+    border-top:1px solid #cfc6c5;
     
 }
