@@ -18,7 +18,7 @@ h1 {
 	animation: title 5s ease infinite;
 }
 p{
-    float: right;
+    float: right;   
 }
 h1{
     margin: 25px 0;
@@ -34,7 +34,7 @@ h1{
     max-width: 1200px;
     margin: auto;
 }
-.nude1,.nude2,.nude3{
+.nude1,.nude2,.nude3,.nude4,.nude5,.nude6{
     float: left;
     width: 33.33333%;
     padding: 15px;
@@ -44,7 +44,10 @@ h1{
 .anh1 img, .anh2 img,.anh3 img{
     vertical-align: middle;
 }
-.anh1 img{
+.anh4 img, .anh5 img,.anh6 img{
+    vertical-align: middle;
+}
+.anh1 img,.anh4 img{
 opacity: 1;
 transition: opacity 0.5s linear;
 }
@@ -66,11 +69,32 @@ opacity: 0.5;
     transform: rotate(360deg);
     transition-duration: 1s;
 }
-.test p{
-    text-align: right;
-    animation: fadeinout 4s linear infinite;
+@keyframes credit{
+    0% {opacity: 1;margin-right: 100px;}
+    20%{opacity: 0.8;margin-right: 200px;}
+    40%{opacity: 0.6;margin-right: 300px;}
+    60%{opacity: 0.4;margin-right:400px;}
+    80%{opacity: 0.2;margin-right: 500px;}
+    100% {opacity: 0;margin-right: 600px;}
 }
-@keyframes fadeinout{
-    0%,100%{opacity: 0;}
-    50%{opacity: 1;}
+.test p{
+    animation: credit 5s linear infinite;
+}
+.anh4:hover{
+    transform: translate(0, -5px);
+    box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 2);
+}
+.anh4:hover img{
+    opacity: 0.5;
+}
+.anh5:hover img{
+        transform: scale(1.3);
+        opacity: 0.7;
+}
+.anh5{
+        overflow: hidden;
+}
+.anh6:hover img{
+    transform: rotate(360deg);
+    transition-duration: 1s;
 }
