@@ -1,7 +1,7 @@
 html,body{margin: 0;padding: 0;}
 *{box-sizing: border-box;}
 img{
-    max-width: 100%;
+    width: 100%;
     height: 500px; 
     border : 3px solid #F8DEBD;
 }
@@ -33,6 +33,7 @@ h1{
 .poor{
     max-width: 1200px;
     margin: auto;
+   
 }
 .nude1,.nude2,.nude3,.nude4,.nude5,.nude6{
     float: left;
