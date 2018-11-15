@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>demo javascript</h1>
+    <p>so lon nhat la </p>
+    <script>
+       //bai1
+function bai1(x) {
+  return (x*x)
+}
+//test
+// console.log(bai1(6))
+// console.log(bai1(7))
+
+//bai2
+function bai2(x,y,z) {
+  return ((3*x)+(2*y)-z);
+}
+//test
+// console.log(bai2(3,1,2))
+// console.log(bai2(5,2,5))
+//bai3
+function bai3(a) {
+  return(a.slice(0,10) + "...")
+}
+//test
+// console.log(bai3("dghssadughalskjghkadjshgkadsjhgks"))
+
+//bai4
+function bai4(a) {
+  return(a.charAt(0).toUpperCase() + a.slice(1).toLowerCase())
+}
+//TEST
+// console.log(bai4("àkajsfhkasjhfLHKKUGLIHGIJHGUKG"))
+
+//bai5
+function bai5(arr){
+ var rs= Math.min.apply( Math, arr);
+ return rs
+}
+// console.log(bai5([7,22,6,24]))
+
+
+//bai6
+function bai6(arr) {
+  arr.sort(function(a,b){return a.localeCompare(b)});
+  return arr
+}
+ 
+//test
+ // document.write(bai6(["ethan","davidmm","an","DaVit"  ]));
+
+//bai7
+var teacher ={
+  firstName: "Kim",
+  lastName: "Dung",
+  age: 30,
+  say : function(){
+ 
+  }
+}
+var student = {
+  firstName: "Co",
+  lastName: "Long",
+  age: 16,
+  say : function(){}
+}
+var parent = {
+  firstName: "Tu",
+  lastName: "Ma Y",
+  age: 49,
+  say : function(){
+  }
+}
+var aboutMe = function(){
+  document.write('ten toi la ' + this.firstName + ' ' + this.lastName + ' nam nay toi ' + this.age + ' tuoi ' + '<br>' )
+}
+// teacher.say=aboutMe
+// teacher.say()
+// student.say = aboutMe
+// student.say()
+// parent.say = aboutMe
+// parent.say()
+
+    </script>
+</body>
+</html>
