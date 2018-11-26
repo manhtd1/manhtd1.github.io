@@ -1,0 +1,22 @@
+table{
+    background-color: #808080;
+    margin: auto;
+    border: 1px solid black;
+}
+#result{
+    width: 168px;
+    height: 70px;
+}
+.btn{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+}
+#equal{
+    height: 86px;
+    position: absolute;
+}
+tr{ 
+    display: flex;
+}  
+
