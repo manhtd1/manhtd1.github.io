@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="quiz.js"></script>
+</head>
+<body>
+    <div id="wrap">
+		<div class="quiz">
+			<div class="question">
+				<span id="ques">Who is the strongest ?</span>
+			</div>
+			<div class="answer">
+				<span id="ans1" onclick="changeColor(this)">----------</span>
+				<span id="ans2" onclick="changeColor(this)">Đây là đáp án đúng</span>
+                <span id="ans3" onclick="changeColor(this)">----------</span>
+                <span id='ans4' onclick="changeColor(this)">----------</span>
+			</div>
+		</div>
+		<button id="next" onclick="nextQuestion()">Next</button>
+		
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
