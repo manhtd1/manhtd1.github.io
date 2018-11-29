@@ -2,86 +2,86 @@ const myQuestions = [
   {
     question: 'Who is the strongest ?',
     answers: {
-      a: 'Đây là đáp án đúng',
+      a: 'Đây là đáp án đúng 1',
       b: '----------',
       c: '----------',
       d: '----------'
     },
-    correctAnswer: 'a'
+    correctAnswer: 'Đây là đáp án đúng 1'
   },
   {
     question: 'Who is the most handsome ?',
     answers: {
       a: '----------',
       b: '----------',
-      c: "----------",
-      d: 'Đây là đáp án đúng'
+      c: '----------',
+      d: 'Đây là đáp án đúng 2'
     },
-    correctAnswer: 'd'
+    correctAnswer: 'Đây là đáp án đúng 2'
   },
   {
     question: 'Who is the richest ?',
     answers: {
       a: '----------',
       b: '----------',
-      c: 'Đây là đáp án đúng',
+      c: 'Đây là đáp án đúng 3',
       d: '----------'
     },
-    correctAnswer: 'c'
+    correctAnswer: 'Đây là đáp án đúng 3'
   },
   {
     question: 'Who is friendly',
     answers: {
       a: '----------',
-      b: 'Đây là đáp án đúng',
+      b: 'Đây là đáp án đúng 4',
       c: '----------',
       d: '----------'
     },
-    correctAnswer: 'b'
+    correctAnswer: 'Đây là đáp án đúng 4'
   }
 ]
-var answer = document.querySelectorAll(".answer span");
 let score = 0
 let count = 1
 let numberQuestion = 0
-
-function start() {
+function reStart() {
   window.location.href = 'index.html'
 }
+const answer = document.querySelectorAll('.answer span')
 function resetColor() {
-	for (var i = 0; i < answer.length; i++) {
-		answer[i].style.backgroundColor = "#cccccc";
-	}
-}
-function changeColor(button) {
-  resetColor()
-  button.style.backgroundColor = '#f1ff92'
-}
-function correctAnswer(dapan){
-  if (dapan == myQuestions[count-1].correctAnswer){
-    score +=1
+  for (let i = 0; i < answer.length; i++) {
+    answer[i].style.backgroundColor = 'transparent'
   }
 }
+function changeColor(self) {
+  resetColor()
+  self.style.backgroundColor = '#f1ff92'
+  let text = self.innerText
+  if (text == myQuestions[numberQuestion].correctAnswer) {
+    score += 1
+  }
+}
+
 function nextQuestion() {
-  resetColor();
+  resetColor()
   numberQuestion++
-  let lastScore = 0
-  if (numberQuestion <= 4) {
+  if (numberQuestion <= 3) {
     document.getElementById('ques').innerHTML = myQuestions[numberQuestion].question
     document.getElementById('ans1').innerHTML = myQuestions[numberQuestion].answers.a
     document.getElementById('ans2').innerHTML = myQuestions[numberQuestion].answers.b
     document.getElementById('ans3').innerHTML = myQuestions[numberQuestion].answers.c
     document.getElementById('ans4').innerHTML = myQuestions[numberQuestion].answers.d
-    if (numberQuestion == 3){
-      document.getElementById('next').innerHTML = "Result"
-    } 
-   } else {
-    if (lastScore == myQuestions.length) {
-			window.location.href = "/javascript/quiz/winlose/win.html";
-		} else {
-			window.location.href = "/javascript/quiz/winlose/lose.html";
-		}
-
-   }
-
+    if (numberQuestion == 3) {
+      document.getElementById('next').innerHTML = 'Result'
+    }
+  } else {
+    if (score == 4) {
+      alert(' ban dc ' + score + 'diem')
+      window.location.href = './winlose/win.html'
+    } else {
+      alert(' ban dc ' + score + 'diem')
+      document.getElementById('next').style.display = "none"
+      document.querySelector('.replay').style.display = "block"
+      
+    }
   }
+}
