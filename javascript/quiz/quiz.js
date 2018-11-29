@@ -1,43 +1,43 @@
 const myQuestions = [
   {
-    question: 'Who is the strongest ?',
+    question: '1+1 = ?',
     answers: {
-      a: 'Đây là đáp án đúng 1',
-      b: '----------',
-      c: '----------',
-      d: '----------'
+      a: '2',
+      b: '3',
+      c: '10',
+      d: '11'
     },
-    correctAnswer: 'Đây là đáp án đúng 1'
+    correctAnswer: '2'
   },
   {
-    question: 'Who is the most handsome ?',
+    question: '8*10 = ?',
     answers: {
-      a: '----------',
-      b: '----------',
-      c: '----------',
-      d: 'Đây là đáp án đúng 2'
+      a: '810',
+      b: '108',
+      c: '880',
+      d: '80'
     },
-    correctAnswer: 'Đây là đáp án đúng 2'
+    correctAnswer: '80'
   },
   {
-    question: 'Who is the richest ?',
+    question: '100/2 = ?',
     answers: {
-      a: '----------',
-      b: '----------',
-      c: 'Đây là đáp án đúng 3',
-      d: '----------'
+      a: '102',
+      b: '120',
+      c: '50',
+      d: '201'
     },
-    correctAnswer: 'Đây là đáp án đúng 3'
+    correctAnswer: '50'
   },
   {
-    question: 'Who is friendly ?',
+    question: 'ai làm bài quiz này ?',
     answers: {
-      a: '----------',
-      b: 'Đây là đáp án đúng 4',
-      c: '----------',
-      d: '----------'
+      a: 'chịu',
+      b: 'Mạnh chứ ai',
+      c: '1 người nào đấy',
+      d: '1 nhóm người nào đấy'
     },
-    correctAnswer: 'Đây là đáp án đúng 4'
+    correctAnswer: 'Mạnh chứ ai'
   }
 ]
 let score = 0
