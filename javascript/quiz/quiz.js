@@ -30,7 +30,7 @@ const myQuestions = [
     correctAnswer: 'Đây là đáp án đúng 3'
   },
   {
-    question: 'Who is friendly',
+    question: 'Who is friendly ?',
     answers: {
       a: '----------',
       b: 'Đây là đáp án đúng 4',
@@ -43,25 +43,32 @@ const myQuestions = [
 let score = 0
 let count = 1
 let numberQuestion = 0
+let mark
 function reStart() {
   window.location.href = 'index.html'
 }
 const answer = document.querySelectorAll('.answer span')
+document.getElementById('next').style.display = "block"
 function resetColor() {
   for (let i = 0; i < answer.length; i++) {
     answer[i].style.backgroundColor = 'transparent'
   }
 }
+document.getElementById('next').style.display = "none"
 function changeColor(self) {
+  document.getElementById('next').style.display = "block"
   resetColor()
   self.style.backgroundColor = '#f1ff92'
+  mark = self.id;
   let text = self.innerText
   if (text == myQuestions[numberQuestion].correctAnswer) {
     score += 1
   }
+
 }
 
 function nextQuestion() {
+  document.getElementById('next').style.display = "none"
   resetColor()
   numberQuestion++
   if (numberQuestion <= 3) {

@@ -27,10 +27,6 @@ body {
 	color: red;
 	display: none;
 }
-
-
-
-
 button {
 	width: 220px;
 	height: 70px;
@@ -43,6 +39,7 @@ button {
 	/* margin-left: 550px; */
 	cursor: pointer;
 	color: #FF0059;
+	margin-top: 40px;
 	
 }
 
@@ -91,3 +88,7 @@ button:hover {
 #next {
 	/* margin-left: 700px; */
 } 
+.disable{
+	top: 2px;
+	left :2px;
+}
