@@ -44,8 +44,8 @@ let score = 0
 let count = 1
 let numberQuestion = 0
 let mark
-function reStart() {
-  window.location.href = 'index.html'
+const reStart = () => {
+  window.href.location = "index.html"
 }
 const answer = document.querySelectorAll('.answer span')
 document.getElementById('next').style.display = "block"
