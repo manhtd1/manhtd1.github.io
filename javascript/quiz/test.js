@@ -42,25 +42,24 @@ const myQuestions = [{
 let score = 0
 let count = 1
 let numberQuestion = 0
-
+let mark
 const reStart = () => {
     window.href.location = "index.html"
 }
 const answer = document.querySelectorAll('.answer span')
-
 
 function resetColor() {
     for (let i = 0; i < answer.length; i++) {
         answer[i].style.backgroundColor = 'transparent'
     }
 }
-$('#next')[0].style.display = "none"
+document.getElementById('next').style.display = "none"
 
 function changeColor(self) {
-    $('#next')[0].style.display = "block"
+    document.getElementById('next').style.display = "block"
     resetColor()
     self.style.backgroundColor = '#f1ff92'
-
+    mark = self.id;
     let text = self.innerText
     if (text == myQuestions[numberQuestion].correctAnswer) {
         score += 1
@@ -69,17 +68,17 @@ function changeColor(self) {
 }
 
 function nextQuestion() {
-    $('#next')[0].style.display = "none"
+    document.getElementById('next').style.display = "none"
     resetColor()
     numberQuestion++
     if (numberQuestion <= 3) {
-        $('#ques')[0].innerHTML = myQuestions[numberQuestion].question
-        $('#ans1')[0].innerHTML = myQuestions[numberQuestion].answers.a
-        $('#ans2')[0].innerHTML = myQuestions[numberQuestion].answers.b
-        $('#ans3')[0].innerHTML = myQuestions[numberQuestion].answers.c
-        $('#ans4')[0].innerHTML = myQuestions[numberQuestion].answers.d
+        document.getElementById('ques').innerHTML = myQuestions[numberQuestion].question
+        document.getElementById('ans1').innerHTML = myQuestions[numberQuestion].answers.a
+        document.getElementById('ans2').innerHTML = myQuestions[numberQuestion].answers.b
+        document.getElementById('ans3').innerHTML = myQuestions[numberQuestion].answers.c
+        document.getElementById('ans4').innerHTML = myQuestions[numberQuestion].answers.d
         if (numberQuestion == 3) {
-            $('#next')[0].innerHTML = 'Result'
+            document.getElementById('next').innerHTML = 'Result'
         }
     } else {
         if (score == 4) {
@@ -87,7 +86,7 @@ function nextQuestion() {
             window.location.href = './winlose/win.html'
         } else {
             alert(' ban dc ' + score + 'diem')
-            $('#next')[0].style.display = "none"
+            document.getElementById('next').style.display = "none"
             document.querySelector('.replay').style.display = "block"
 
         }
