@@ -74,21 +74,17 @@ body {
   -ms-transform: scale(0.97);
   -o-transform: scale(0.97);
 }
-/* hieu ung bien mat */
 @keyframes fadeOutDown {
   0% {
     opacity: 1;
-  
   }
   99% {
-   opacity: 0;
-   -webkit-transform: translate3d(0, 50%, 0);
-   transform: translate3d(0, 50%, 0);
-   z-index: -999;
-   cursor: none;
-  
-   -webkit-backface-visibility: visible;
-}
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+    z-index: -999;
+    cursor: none;
+  }
   100% {
     opacity: 0;
     -webkit-transform: translate3d(0, -50%, 0);
@@ -103,8 +99,9 @@ body {
 .memory-card.fadeOutDown {
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
+/* day la progessbar */
