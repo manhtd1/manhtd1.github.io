@@ -22,8 +22,12 @@ function checkMatch() {
   match ? disableCard() : undisableCard()
 }
 function disableCard() {
-  firstCard.removeEventListener('click', flipCard)
-  secondCard.removeEventListener('click', flipCard)
+//   firstCard.removeEventListener('click', flipCard)
+//   secondCard.removeEventListener('click', flipCard)
+setTimeout(()=> {
+    firstCard.classList.add('fadeOutDown')
+    secondCard.classList.add('fadeOutDown')
+}, 800)
 }
 function undisableCard() {
   lockCard = true
@@ -31,7 +35,7 @@ function undisableCard() {
     firstCard.classList.remove('flip')
     secondCard.classList.remove('flip')
     lockCard = false
-  }, 1300)
+  }, 1000)
 }
 ;(function shuffle() {
   cards.forEach(card => {
