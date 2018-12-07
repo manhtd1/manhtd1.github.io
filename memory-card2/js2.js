@@ -27,8 +27,8 @@ lockCard =true
 setTimeout(()=> {
     firstCard.classList.add('fadeOutDown')
     secondCard.classList.add('fadeOutDown')
-}, 500)
-resetCard()
+    resetCard()
+}, 800)
 }
 function undisableCard() {
   lockCard = true

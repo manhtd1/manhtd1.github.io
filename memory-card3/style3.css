@@ -8,17 +8,22 @@ body {
   background: lightblue url('img/bg.jpg');
   display: flex;
 }
+.wrap{
+  display:block
+}
 .memory-game {
   width: 1600px;
   height: 700px;
   display: flex;
   flex-wrap: wrap;
   /* overflow: auto; */
-  margin: auto;
+  /* margin: auto; */
   perspective: 1000px;
+  
+
 }
 .memory-card {
-  width: 15%;
+  width: 16%;
   height: 33.3333%;
   /*border: 2px solid red;
     */
@@ -104,4 +109,36 @@ body {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-/* day la progessbar */
+/* day la progessBar */
+#progressBar {
+  width: 100%;
+  margin: 10px auto;
+  height: 22px;
+  background-color: #0A5F44;
+  margin-bottom: 30px;
+}
+#progressBar div {
+  height: 100%;
+  text-align: right;
+  padding: 0 10px;
+  line-height: 22px; 
+  width: 0;
+  background-color: #CBEA00;
+  box-sizing: border-box;
+}
+/* day la lose-win*/
+.lose-img{
+  display: none;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+}
+.win-img{
+  width: 100%;
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+}
