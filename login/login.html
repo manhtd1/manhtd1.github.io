@@ -10,30 +10,38 @@
   </head>
   <body>
     <div class="wrap">
-      <form action="index.html">
+      <form action="index.html" id="form-register">
         <h1>Đăng ký thành viên</h1>
-        <input type="text" placeholder="Họ tên" name="name1" id="name" value=""> </br></br>
-        <input type="datetime" placeholder="Ngày sinh" name="datetime" value=""></br></br>
-        <input type="email" placeholder="Email" name="email" id="email" value="" /></br></br>
-        <input type="password" placeholder="Mật khẩu" name="password" id="password" value=""/></br></br>
-        <input type="text" placeholder="Địa chỉ" name="address" value=""> </br></br>
-        <input type="number" placeholder="Điện Thoại" name="phone" value=""> 
+        <input type="text" placeholder="*Họ tên" name="name" id="name" value="" required>
+        <span class="error"></span> <br/></br/>
+        <input type="date" placeholder="*Ngày sinh" name="datetime" value=""required>
+        <span class="error"></span> <br/></br/>
+        <input type="email" placeholder="*Email" name="email" id="email" value="" required/>
+        <span class="error"></span> <br/></br/>
+        <input type="password" placeholder="*Mật khẩu" name="password" id="password" value=""required/>
+        <span class="error"></span> <br/></br/>
+        <input type="text" placeholder="Địa chỉ" name="address" value="">
+        <br/><br/>
+        <input type="tel" placeholder="*Điện Thoại" name="phone" value=""required> 
+        <span class="error"></span>
     </br>
     <div>
-        <div><input type="radio" name="gioitinh" id="male" value="Nam" ><label for="male">Nam</label></div>
-        <div><input type="radio" name="gioitinh" id="famale" value="Nữ"><label for="famale">Nữ</label></div>
-      </div>
+        <div><input type="radio" name="gioitinh" id="male" value="Nam" required><label for="male">Nam</label></div>
+        <div><input type="radio" name="gioitinh" id="famale" value="Nữ" required><label for="famale">Nữ</label></div>
+    </div>
 </br>
 <input type="submit" id="dangky" name="dangky" value="Đăng Ký" onclick="">
-
+<p><i>* là trường hợp bắt buộc.</i></p>
       </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-   function gettext() {
-     let s = document.getElementById('name').value
-     
-   }
+      $('#form-register').on('submit',function(){
+      if ($('#password').val().match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/) == null){
+         alert('Mật khẩu có độ dài từ 4-8 ký tự, có ít nhất 1 chữ hoa, 1 chữ thường và 1 số nguyên')
+         return false
+      }
+      })
     </script>
   </body>
 </html>

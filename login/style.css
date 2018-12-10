@@ -32,6 +32,9 @@ div {
 label{
   padding-left: 7px;
 }
+input[type="submit"]{
+  cursor: pointer;
+}
 input[type="submit"]:hover{
   background-color: aquamarine
 }
