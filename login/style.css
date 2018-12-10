@@ -1,19 +1,24 @@
 body {
   background-color: gray;
 }
-input {
-  height: 26px;
-  width: 200px;
-  
+input{
+width: 500px;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
 }
-select {
+/* select {
   height: 30px;
   width: 204px;
-}
+} */
 
 input#male {
   width: 15px;
   height: 15px;
+  
 }
 input#famale {
   width: 15px;

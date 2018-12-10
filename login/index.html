@@ -7,6 +7,43 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Đăng Ký thành công</h1>
+    <h2>Đăng Ký thành công</h2>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script> 
+        let chuoi = decodeURIComponent(location.search);
+        let lent=chuoi.length;
+        let arr1=[];
+        let arr2=[];
+        for (i=0;i<=lent;i++){
+            if(chuoi[i]=='='){
+                arr1.push(i);
+            }
+            if(chuoi[i]=='&'){
+                arr2.push(i);
+            }
+        }
+        let name= chuoi.slice(arr1[0]+1,arr2[0]);
+        let email= chuoi.slice(arr1[2]+1,arr2[2]);
+        let psw= chuoi.slice(arr1[3]+1,arr2[3]);
+        let year= chuoi.slice(arr1[1]+1,arr2[1]);
+        let gender= chuoi.slice(arr1[6]+1,arr2[6]);
+        let address = chuoi.slice(arr1[4]+1,arr2[4]);
+        let phone = chuoi.slice(arr1[5]+1,arr2[5]);
+        // console.log(name);
+        // console.log(email);
+        // console.log(psw);
+        // console.log(year);
+        // console.log(gender);
+        
+        document.write(`Họ Tên: ${name} </br>`) 
+        document.write(`Email: ${email} </br>`)
+        document.write(`Mật Khẩu: ${psw} </br>`)
+        document.write(`Năm Sinh: ${year} </br>`)
+        document.write(`Giới tính: ${gender} </br>`)
+        document.write(`Địa chỉ: ${address} </br>`)
+        document.write(`Điện thoại: ${phone}</br>`)
+
+    </script>
 </body>
+
 </html>

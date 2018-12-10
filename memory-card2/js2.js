@@ -1,8 +1,8 @@
 const cards = document.querySelectorAll('.memory-card')
 let flipedCard = false
+let lockCard = false
 let firstCard
 let secondCard
-let lockCard = false
 function flipCard() {
   if (lockCard) return  // chi dc phep mo 2 la bai 1 luc
   if (this === firstCard) return  // ko cho phep bam vao 1 quan bai 2 lan

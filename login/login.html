@@ -4,31 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Register Form</title>
     <link href="style.css" rel="stylesheet">
+    
   </head>
   <body>
     <div class="wrap">
-      <form action="login.html">
+      <form action="index.html">
         <h1>Đăng ký thành viên</h1>
-        <input type="text" placeholder="Họ tên" name="name" > </br></br>
-        <input type="email" placeholder="Email" name="email" /></br></br>
-        <input type="password" placeholder="Mật khẩu" name="password" /></br></br>
-        <select name="year">
-            <option>Chọn Năm Sinh.....</option>
-            <option value="1994">1994</option>
-            <option value="1993">1993</option>
-            <option value="1992">1992</option>
-            <option value="1991">1991</option>
-            <option value="1990">1990</option>
-        </select>
+        <input type="text" placeholder="Họ tên" name="name1" id="name" value=""> </br></br>
+        <input type="datetime" placeholder="Ngày sinh" name="datetime" value=""></br></br>
+        <input type="email" placeholder="Email" name="email" id="email" value="" /></br></br>
+        <input type="password" placeholder="Mật khẩu" name="password" id="password" value=""/></br></br>
+        <input type="text" placeholder="Địa chỉ" name="address" value=""> </br></br>
+        <input type="number" placeholder="Điện Thoại" name="phone" value=""> 
     </br>
-        <input type="radio" name="gioitinh" id="male"  ><label for="male">Nam</label>
-        <input type="radio" name="gioitinh" id="famale" ><label for="famale">Nữ</label>
+        <input type="radio" name="gioitinh" id="male" value="Nam" ><label for="male">Nam</label>
+        <input type="radio" name="gioitinh" id="famale" value="Nữ"><label for="famale">Nữ</label>
 </br>
-<input type="submit" id="dangky" name="dangky" value="Đăng Ký">
+<input type="submit" id="dangky" name="dangky" value="Đăng Ký" onclick="">
 
       </form>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+   function gettext() {
+     let s = document.getElementById('name').value
+     
+   }
+    </script>
   </body>
 </html>
