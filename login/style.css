@@ -17,10 +17,21 @@ box-sizing: border-box;
 
 input#male {
   width: 15px;
-  height: 15px;
-  
+  height: 15px
 }
 input#famale {
   width: 15px;
   height: 15px;
+}
+div {
+  display: flex;
+  align-items: baseline;
+  width:250px;
+  margin-top: 5px;
+}
+label{
+  padding-left: 7px;
+}
+input[type="submit"]:hover{
+  background-color: aquamarine
 }
