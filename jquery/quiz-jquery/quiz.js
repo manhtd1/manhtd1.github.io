@@ -65,7 +65,6 @@ function changeColor(self) {
     if (text == myQuestions[numberQuestion].correctAnswer) {
         score += 1
     }
-
 }
 
 function nextQuestion() {

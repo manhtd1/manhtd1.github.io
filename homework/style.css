@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%; 
+    height: 100%;
+}
+.a,.b,.c,.d{
+display: flex;
+margin: 0 199px;
+margin-bottom: 40px;
+overflow: hidden;
+text-align: center;
+}
+.a1{
+    background-color: gray;
+    width: 50%;
+    height: 60px;
+    text-align: center;
+    margin-right: 10px;
+}
+.a2{
+    background-color: gray;
+    width: 50%;
+    height: 60px;
+    text-align: center;
+    margin-left: 10px;
+}
+.b1,.b4,.b5,.b6{
+    background-color: gray;
+}
+.b1{
+    width: 25%;
+    margin-right: 10px;
+    text-align: center;
+}
+.b2{
+    width: 25%;
+    margin: 0 10px;
+}
+.b3{
+    width: 25%;
+    margin: 0 10px;
+   
+}
+.b4{
+    width: 25%;
+    margin-left: 10px;
+    text-align: center;
+}
+.b21{
+    background-color: gray;
+    height:44%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.b22{
+    background-color: gray;
+    height:44%;
+    margin-top: 5px;
+    text-align: center;
+}
+.b31{
+    background-color: gray;
+    height:44%;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.b32{
+    background-color: gray;
+    height:44%;
+    margin-top: 5px;
+    text-align: center;
+}
+.c{
+    justify-content: center
+}
+.c1{
+    background-color: gray;
+    width: 60%;
+    text-align: center;
+    
+}
+.d1{
+    flex-grow: 1;
+    margin-right: 5px;
+    background-color: gray;
+    height:100px;
+}
+.d2{
+    flex-grow: 2;
+    background-color: gray;
+margin: 0 10px;    
+}
+.d3{
+    flex-grow: 3;
+    background-color: gray;
+    margin-left: 5px;
+}
