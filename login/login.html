@@ -18,7 +18,7 @@
         <span class="error"></span> <br/></br/>
         <input type="email" placeholder="*Email" name="email" id="email" value="" required/>
         <span class="error"></span> <br/></br/>
-        <input type="password" placeholder="*Mật khẩu" name="password" id="password" value=""required/>
+        <input type="password" placeholder="*Mật khẩu" name="password" id="password" value="" required/>
         <span class="error"></span> <br/></br/>
         <input type="text" placeholder="Địa chỉ" name="address" value="">
         <br/><br/>
@@ -37,8 +37,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
       $('#form-register').on('submit',function(){
-      if ($('#password').val().match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$/) == null){
-         alert('Mật khẩu có độ dài từ 4-8 ký tự, có ít nhất 1 chữ hoa, 1 chữ thường và 1 số nguyên')
+      if ($('#password').val().match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,32}$/) == null){
+         alert('Mật khẩu có độ dài từ 8-32 ký tự, có ít nhất 1 chữ hoa, 1 chữ thường và 1 số nguyên')
          return false
       }
       })
