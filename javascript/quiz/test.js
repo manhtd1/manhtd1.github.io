@@ -58,26 +58,18 @@ function resetColor() {
 document.getElementById('next').style.display = 'none'
 
 function changeColor(a) {
-  document.getElementById('next').style.display = 'block'
-  resetColor()
+  // document.getElementById('next').style.display = 'block'
   a.style.backgroundColor = '#f1ff92'
   // checkMatch()
-  if ( a === mark) return
-  let text = a.innerText
-  
+  text = a.innerText
   if (text === myQuestions[numberQuestion].correctAnswer) {
     score += 1
   }
-  
   console.log(score)
-}
-
-
-
-function nextQuestion() {
-  document.getElementById('next').style.display = 'none'
-  resetColor()
   numberQuestion++
+  // if ( a === mark) return
+  
+  
   if (numberQuestion <= 3) {
     document.getElementById('ques').innerHTML = myQuestions[numberQuestion].question
     document.getElementById('ans1').innerHTML = myQuestions[numberQuestion].answers.a
@@ -87,6 +79,7 @@ function nextQuestion() {
     if (numberQuestion == 3) {
       document.getElementById('next').innerHTML = 'Result'
     }
+    resetColor()
   } else {
     if (score == 4) {
       alert(' ban dc ' + score + 'diem')
@@ -97,4 +90,14 @@ function nextQuestion() {
       document.querySelector('.replay').style.display = 'block'
     }
   }
+}
+
+
+
+function nextQuestion() {
+  document.getElementById('next').style.display = 'none'
+  
+  
+    
+  
 }

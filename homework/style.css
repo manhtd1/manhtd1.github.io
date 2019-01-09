@@ -97,3 +97,26 @@ margin: 0 10px;
     background-color: gray;
     margin-left: 5px;
 }
+
+/* chj tinh tu duoi nay */
+div{
+    position: relative;
+
+}
+div img{
+   display: block;
+   margin: auto;
+}
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 20px;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
