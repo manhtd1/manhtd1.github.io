@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>table</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <style>
+        table {
+            border-spacing: 0;
+            width: 100%;
+            /* border: 1px solid #ddd; */
+        }
+        th{
+            /* border: 1px solid #ddd; */
+            cursor: pointer;
+            padding: 16px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+        td{
+            padding: 8px;
+            text-align: left;
+            /* border: 1px solid #ddd; */
+        }
+        img{
+            width: 35px;
+            height: 35px;
+        }
+        tr:nth-child(even) {
+                background-color: #f2f2f2
+        }
+        #myTable tr:hover {background-color: #ddd;}
+    </style>
+</head>
+<body>
+    <table id="myTable" style="width:100%">
+        
+            <tr>
+                <th onclick="sortTable(0)">Icon</th>
+                <th onclick="sortTable(1)">Tên</th>
+                <th onclick="sortTable(2)">Giới tính</th>
+                <th onclick="sortTable(3)">Tuổi</th>
+                <th onclick="sortTable(4)">Email</th>
+                <th onclick="sortTable(5)">Money in bank</th>
+            </tr>
+        
+        
+            <tr>
+                <td><img src='img/m.jpeg'></td>
+                <td>System Architect</td>
+                <td>Male</td>
+                <td>25</td>
+                <td>manh@gmail.com</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td><img src="img/2.jpeg"></td>
+                <td>Accountant</td>
+                <td>Gay</td>
+                <td>24</td>
+                <td>tung@gmail.com</td>
+                <td>$170,750</td>
+            </tr>
+            <tr>
+                <td><img src="img/3.jpeg"></td>
+                <td>Junior Technical Author</td>
+                <td>Famale</td>
+                <td>22</td>
+                <td>chi@gmail.com</td>
+                <td>$560,000</td>
+            </tr>
+            <tr>
+                <td><img src="img/4.jpeg"></td>
+                <td>Senior Javascript Developer</td>
+                <td>Male</td>
+                <td>29</td>
+                <td>huy@gmail.com</td>
+                <td>$433,060</td>
+            </tr>
+            <tr>
+                <td><img src="img/5.jpeg"></td>
+                <td>Joker</td>
+                <td>Famale</td>
+                <td>21</td>
+                <td>maianh@gmail.com</td>
+                <td>$162,700</td>
+            </tr>
+            <tr>
+                <td><img src="img/6.jpeg"></td>
+                <td>Integration Specialist</td>
+                <td>Male</td>
+                <td>30</td>
+                <td>nam@gmail.com</td>
+                <td>$372,000</td>
+            </tr>
+            <tr>
+                <td><img src="img/7.jpeg"></td>
+                <td>Sales Assistant</td>
+                <td>Male</td>
+                <td>32</td>
+                <td>nguyen@gmail.com</td>
+                <td>$137,500</td>
+            </tr>
+            <tr>
+                <td><img src="img/8.jpeg"></td>
+                <td>Integration Specialist</td>
+                <td>Male</td>
+                <td>27</td>
+                <td>dat@gmail.com</td>
+                <td>$327,900</td>
+            </tr>
+      
+    
+          
+            
+        
+    </table>
+   
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+    <script  src='js.js' ></script>
+</body>
+</html>
