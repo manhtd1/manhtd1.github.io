@@ -4,16 +4,13 @@
 }
 
 body {
-	max-width: 1000px;
+	/* max-width: 1000px; */
 	background-image: url(mm.jpg);
 	background-size: cover;
+	height: 100vh;
 }
 
 /*<!----------index---------->*/
-#wrap {
-	max-width: 900px;
-	margin: 0 auto;
-}
 .replay{
 	width: 220px;
 	height: 70px;
@@ -36,7 +33,7 @@ button {
 	border: 1px solid white;
 	border-radius: 10px;
 	box-shadow: 0px 2px 30px 0px #000;
-	/* margin-left: 550px; */
+	
 	cursor: pointer;
 	color: #FF0059;
 	margin-top: 40px;
@@ -48,15 +45,16 @@ button:hover {
 }
 
 .quiz {
-	/* float: left; */
-	width: 50%;
-	/* margin: 100px 0 30px 450px; */
+	width: 50%;	
 	box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
 	border: 1px solid #73848e;
 	overflow: hidden;
 	font-size: 15px;
 	text-align: center;
+	width: 500px;
+    margin: auto;
+    margin-top: 450px;
 }
 
 .question {
@@ -89,6 +87,3 @@ button:hover {
 	/* margin-left: 700px; */
 } 
 
-.quiz{
-	margin: 50px;
-}

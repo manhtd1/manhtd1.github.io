@@ -50,16 +50,12 @@ function reStart() {
 
 const answer = document.querySelectorAll('.answer span')
 
-function resetColor() {
-  for (let i = 0; i < answer.length; i++) {
-    answer[i].style.backgroundColor = 'transparent'
-  }
-}
+// f
 document.getElementById('next').style.display = 'none'
 
 function changeColor(a) {
   // document.getElementById('next').style.display = 'block'
-  a.style.backgroundColor = '#f1ff92'
+  // a.style.backgroundColor = '#f1ff92'
   // checkMatch()
   text = a.innerText
   if (text === myQuestions[numberQuestion].correctAnswer) {
@@ -68,8 +64,6 @@ function changeColor(a) {
   console.log(score)
   numberQuestion++
   // if ( a === mark) return
-  
-  
   if (numberQuestion <= 3) {
     document.getElementById('ques').innerHTML = myQuestions[numberQuestion].question
     document.getElementById('ans1').innerHTML = myQuestions[numberQuestion].answers.a
@@ -79,7 +73,6 @@ function changeColor(a) {
     if (numberQuestion == 3) {
       document.getElementById('next').innerHTML = 'Result'
     }
-    resetColor()
   } else {
     if (score == 4) {
       alert(' ban dc ' + score + 'diem')
@@ -90,14 +83,9 @@ function changeColor(a) {
       document.querySelector('.replay').style.display = 'block'
     }
   }
+  resetColor()
 }
-
-
 
 function nextQuestion() {
   document.getElementById('next').style.display = 'none'
-  
-  
-    
-  
 }

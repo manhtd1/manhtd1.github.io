@@ -11,10 +11,10 @@ function sortTable(n) {
     shouldSwitch,
     dir,
     switchcount = 0
-  table = document.getElementById('myTable')
-  switching = true
+    table = document.getElementById('myTable')
+    switching = true
   //Set the sorting direction to ascending:
-  dir = 'asc'
+    dir = 'asc'
   /*Make a loop that will continue until
     no switching has been done:*/
     // $('#rx1').addClass('fas fa-angle-down')

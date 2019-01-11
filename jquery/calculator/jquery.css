@@ -51,6 +51,7 @@ body {
     border-radius: 15px;
     box-shadow: 2px 2px 1px 1px #222;
     width: 50px;
+    cursor: pointer;
   }
   
   .calc-row div.zero {
@@ -60,3 +61,4 @@ body {
   .calc-row div.zero {
     margin-right: 5px;
   }
+  
