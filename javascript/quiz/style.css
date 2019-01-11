@@ -88,7 +88,7 @@ button:hover {
 #next {
 	/* margin-left: 700px; */
 } 
-.disable{
-	top: 2px;
-	left :2px;
+
+.quiz{
+	margin: 50px;
 }

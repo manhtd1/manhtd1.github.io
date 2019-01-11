@@ -17,6 +17,34 @@ function sortTable(n) {
   dir = 'asc'
   /*Make a loop that will continue until
     no switching has been done:*/
+    // $('#rx1').addClass('fas fa-angle-down')
+    // $('#rx2').addClass('fas fa-angle-down')
+    // $('#rx3').addClass('fas fa-angle-down')
+    // $('#rx4').addClass('fas fa-angle-down')
+    // $('#rx5').addClass('fas fa-angle-down')
+    // $('#rx6').addClass('fas fa-angle-down')
+    // $('#rx1').removeClass('fas fa-angle-up')
+    // $('#rx2').removeClass('fas fa-angle-up')
+    // $('#rx3').removeClass('fas fa-angle-up')
+    // $('#rx4').removeClass('fas fa-angle-up')
+    // $('#rx5').removeClass('fas fa-angle-up')
+    // $('#rx6').removeClass('fas fa-angle-up')
+    $('th').click(function(){
+        $('#rx1').css('visibility','visible')
+        $('#rc1').css('visibility','hidden')
+        $('#rx2').css('visibility','visible')
+        $('#rc2').css('visibility','hidden')
+        $('#rx3').css('visibility','visible')
+        $('#rc3').css('visibility','hidden')
+        $('#rx4').css('visibility','visible')
+        $('#rc4').css('visibility','hidden')
+        $('#rx5').css('visibility','visible')
+        $('#rc5').css('visibility','hidden')
+        $('#rx6').css('visibility','visible')
+        $('#rc6').css('visibility','hidden')
+    }
+)
+
   while (switching) {
     //start by saying: no switching is done:
     switching = false
@@ -64,3 +92,4 @@ function sortTable(n) {
     }
   }
 }
+

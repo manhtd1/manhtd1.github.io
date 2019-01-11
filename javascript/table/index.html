@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>table</title>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <style>
         table {
             border-spacing: 0;
             width: 100%;
-            /* border: 1px solid #ddd; */
+            border: 1px solid #ddd;
         }
         th{
-            /* border: 1px solid #ddd; */
+            border: 1px solid #ddd;
             cursor: pointer;
             padding: 16px;
             text-align: left;
@@ -23,7 +24,7 @@
         td{
             padding: 8px;
             text-align: left;
-            /* border: 1px solid #ddd; */
+            border: 1px solid #ddd;
         }
         img{
             width: 35px;
@@ -33,18 +34,68 @@
                 background-color: #f2f2f2
         }
         #myTable tr:hover {background-color: #ddd;}
+        i#rx1{
+            float: right;
+            visibility: hidden;
+        }
+        i#rx2 {
+            float: right;
+            visibility: hidden;
+        }
+        i#rx3{
+            float: right;
+            visibility: hidden;
+        }
+        i#rx4{
+            float: right;
+            visibility: hidden;
+        }
+        i#rx5{
+            float: right;
+            visibility: hidden;
+        }
+        i#rx6{
+            float: right;
+            visibility: hidden;
+        }
+        i#rc1{
+            float: right;
+            visibility:visible;
+        }
+        i#rc2{
+            float: right;
+            visibility:visible;
+        }
+        i#rc3{
+            float: right;
+            visibility:visible;
+        }
+        i#rc4{
+            float: right;
+            visibility:visible;
+        }
+        i#rc5{
+            float: right;
+            visibility:visible;
+        }
+        i#rc6{
+            float: right;
+            visibility:visible;
+        }
+        
+
     </style>
 </head>
 <body>
     <table id="myTable" style="width:100%">
         
             <tr>
-                <th onclick="sortTable(0)">Icon</th>
-                <th onclick="sortTable(1)">Tên</th>
-                <th onclick="sortTable(2)">Giới tính</th>
-                <th onclick="sortTable(3)">Tuổi</th>
-                <th onclick="sortTable(4)">Email</th>
-                <th onclick="sortTable(5)">Money in bank</th>
+                <th onclick="sortTable(0)" >Icon <i id='rx1' class="fas fa-angle-up"><i id='rc1' class="fas fa-angle-down"></i></th>
+                <th onclick="sortTable(1)">Tên <i id='rx2' class="fas fa-angle-up"></i> <i id='rc2' class="fas fa-angle-down"></i></th>
+                <th onclick="sortTable(2)">Giới tính  <i id='rx3' class="fas fa-angle-up"></i> <i id='rc3' class="fas fa-angle-down"></i></th>
+                <th onclick="sortTable(3)">Tuổi <i id='rx4' class="fas fa-angle-up"></i> <i id='rc4' class="fas fa-angle-down"></i></th>
+                <th onclick="sortTable(4)">Email <i id='rx5'class="fas fa-angle-up"></i> <i id='rc5' class="fas fa-angle-down"></i></th>
+                <th onclick="sortTable(5)">Money in bank <i id='rx6' class="fas fa-angle-up"></i> <i id='rc6' class="fas fa-angle-down"></i></th>
             </tr>
         
         
@@ -120,7 +171,16 @@
     </table>
    
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
     <script  src='js.js' ></script>
 </body>
 </html>
+<!-- <i class="fas fa-angle-up"></i> <i class="fas fa-angle-down"></i>
+<i class="fas fa-angle-up"></i> <i class="fas fa-angle-down"></i>
+<i class="fas fa-angle-up"></i> <i class="fas fa-angle-down"></i>
+<i class="fas fa-angle-up"></i> <i class="fas fa-angle-down"></i>
+<i class="fas fa-angle-up"></i> <i class="fas fa-angle-down"></i>
+<i class="fas fa-angle-up"></i> <i class="fas fa-angle-down"></i> -->
